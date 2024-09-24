@@ -10,5 +10,8 @@ public class Main {
         Actividad_inicial actividad_inicial = new Actividad_inicial();
         actividad_inicial.ejecutar();
 
+        //Ejercicio1 Ejercicio1 = new Ejercicio1();
+        //Ejercicio1.ejercicio();
+
     }
 }

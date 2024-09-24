@@ -1,3 +1,4 @@
+
 package org.example;
 
 import java.util.Scanner;
@@ -14,17 +15,32 @@ public class Actividad_inicial {
 
         System.out.println("Hola " + nombre + ", bienvenido a " + curso + ".");
 
-        System.out.println("Introduce un número:");
+        System.out.println("Introduce el primer número:");
         int num1 = entrada.nextInt();
 
-        System.out.println("Introduce otro número:");
+        System.out.println("Introduce el segundo número:");
         int num2 = entrada.nextInt();
 
-        int resultado = num1 + num2;
 
+        while (num1==0 || num2==0){
+
+            System.out.println("Error. Un sumando no puede ser 0.");
+
+            System.out.println("Introduce el primer número:");
+            num1= entrada.nextInt();
+
+            System.out.println("Introduce el segundo número:");
+            num2= entrada.nextInt();
+
+        }
+
+        int resultado = num1 + num2;
         System.out.printf("La suma de los dos es: " + resultado);
+
+        }
+
 
     }
 
-}
+
 
