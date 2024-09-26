@@ -8,7 +8,7 @@ package org.example;
 import java.util.Scanner;
 
 public class Ejercicio1 {
-    public void ejercicio() {
+    public void ejercicio1() {
 
         System.out.println("Introduce un número");
         Scanner entrada = new Scanner(System.in);

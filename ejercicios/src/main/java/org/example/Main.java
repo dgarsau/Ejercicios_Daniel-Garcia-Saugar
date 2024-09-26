@@ -7,11 +7,24 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Actividad_inicial actividad_inicial = new Actividad_inicial();
-        actividad_inicial.ejecutar();
+        //Actividad_inicial actividad_inicial = new Actividad_inicial();
+        //actividad_inicial.ejecutar();
 
         //Ejercicio1 Ejercicio1 = new Ejercicio1();
-        //Ejercicio1.ejercicio();
+        //Ejercicio1.ejercicio1();
+
+        //Ejercicio2 Ejercicio2 = new Ejercicio2();
+        //Ejercicio2.ejercicio2();
+
+        //Ejercicio3 Ejercicio3 = new Ejercicio3();
+        //Ejercicio3.ejercicio3();
+
+        //Ejercicio4 Ejercicio4 = new Ejercicio4();
+        //Ejercicio4.ejercicio4();
+
+        Ejercicio5 Ejercicio5 = new Ejercicio5();
+        Ejercicio5.ejercicio5();
+
 
     }
 }

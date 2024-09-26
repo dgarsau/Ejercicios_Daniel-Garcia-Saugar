@@ -1,4 +1,3 @@
-
 package org.example;
 
 import java.util.Scanner;
@@ -35,7 +34,7 @@ public class Actividad_inicial {
         }
 
         int resultado = num1 + num2;
-        System.out.printf("La suma de los dos es: " + resultado);
+        System.out.println("La suma de los dos es: " + resultado);
 
         }
 
