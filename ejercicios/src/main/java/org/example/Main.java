@@ -10,6 +10,12 @@ public class Main {
         //Actividad_inicial actividad_inicial = new Actividad_inicial();
         //actividad_inicial.ejecutar();
 
+        //Operadores Operadores = new Operadores();
+        //Operadores.operadores();
+        //Operadores.asignacion();
+        //Operadores.comparacion();
+        //Operadores.logicos();
+
         //Ejercicio1 Ejercicio1 = new Ejercicio1();
         //Ejercicio1.ejercicio1();
 
@@ -22,8 +28,8 @@ public class Main {
         //Ejercicio4 Ejercicio4 = new Ejercicio4();
         //Ejercicio4.ejercicio4();
 
-        Ejercicio5 Ejercicio5 = new Ejercicio5();
-        Ejercicio5.ejercicio5();
+        //Ejercicio5 Ejercicio5 = new Ejercicio5();
+        //Ejercicio5.ejercicio5();
 
 
     }
