@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Actividad_inicial actividad_inicial = new Actividad_inicial();
-        actividad_inicial.ejecutar();
+        //Actividad_inicial actividad_inicial = new Actividad_inicial();
+        //actividad_inicial.ejecutar();
 
         //Operadores Operadores = new Operadores();
         //Operadores.operadores();
@@ -30,6 +30,12 @@ public class Main {
 
         //Ejercicio5 Ejercicio5 = new Ejercicio5();
         //Ejercicio5.ejercicio5();
+
+        //Ejercicio6 Ejercicio6 = new Ejercicio6();
+        //Ejercicio6.ejercicio6();
+
+        Practica3 Practica3 = new Practica3();
+        Practica3.practica3();
 
 
     }

@@ -27,8 +27,6 @@ public class Actividad_inicial {
         int num1 = 0;
         int num2 = 0;
 
-
-
         while (num1==0 || num2==0){
 
 
@@ -44,7 +42,7 @@ public class Actividad_inicial {
             }
 
             if (num1==0 || num2==0){
-                System.out.println("Error. Un sumando no puede ser 0.");
+                System.out.println("Un sumando no puede ser 0.");
             }
 
 
