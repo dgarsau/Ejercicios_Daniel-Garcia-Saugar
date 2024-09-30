@@ -34,8 +34,12 @@ public class Main {
         //Ejercicio6 Ejercicio6 = new Ejercicio6();
         //Ejercicio6.ejercicio6();
 
-        Practica3 Practica3 = new Practica3();
-        Practica3.practica3();
+
+        //Practica3 Practica3 = new Practica3();
+        //Practica3.practica3();
+
+        Practica4 Practica4 = new Practica4();
+        Practica4.practica4();
 
 
     }
