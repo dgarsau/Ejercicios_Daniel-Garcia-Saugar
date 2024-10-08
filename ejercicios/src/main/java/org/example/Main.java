@@ -38,9 +38,23 @@ public class Main {
         //Practica3 Practica3 = new Practica3();
         //Practica3.practica3();
 
-        Practica4 Practica4 = new Practica4();
-        Practica4.practica4();
+        //Practica4 Practica4 = new Practica4();
+        //Practica4.practica4();
 
+        //CosasString CosasString = new CosasString();
+        //CosasString.caracteres();
+
+        //UD2Ejercicio1 UD2Ejercicio1 = new UD2Ejercicio1();
+        //UD2Ejercicio1.UD2ejercicio1();
+
+        //UD2Ejercicio2 UD2Ejercicio2 = new UD2Ejercicio2();
+        //UD2Ejercicio2.UD2ejercicio2();
+
+        //UD2Ejercicio3 UD2Ejercicio3 = new UD2Ejercicio3();
+        //UD2Ejercicio3.UD2ejercicio3();
+
+        UD2Ejercicio4 UD2Ejercicio4 = new UD2Ejercicio4();
+        UD2Ejercicio4.UD2ejercicio4();
 
     }
 }
