@@ -17,14 +17,15 @@ public class UD2Ejercicio5 {
 
         int contador = 10;
 
-        while (contador > 0 && !texto.contains(palabra)) {
+        while (contador > 1 && !texto.contains(palabra)) {
 
             if (!texto.contains(palabra)) {
                 System.out.println("La palabra no aparece en el texto.");
+                contador -= 1;
                 System.out.println("Te quedan " + contador + " intentos");
                 System.out.println("Introduce otra palabra:");
                 palabra = entrada.nextLine();
-                contador -= 1;
+
             }
 
         }

@@ -23,8 +23,6 @@ public class UD2Ejercicio3 {
         String trozo = cadena.substring(0,quitar);
         System.out.println("El número es = " + trozo);
 
-
-
     }
 }
 
