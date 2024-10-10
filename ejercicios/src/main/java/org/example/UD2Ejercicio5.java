@@ -27,13 +27,14 @@ public class UD2Ejercicio5 {
                 contador -= 1;
             }
 
-            else {
-                System.out.println("Felicidades! La palabra aparece en el texto.");
-            }
-
         }
 
-        System.out.println("No te quedan intentos, gana el Jugador 1");
+        if (texto.contains(palabra)) {
+            System.out.println("Felicidades! La palabra aparece en el texto.");
+        }
+        else {
+            System.out.println("No te quedan intentos, gana el Jugador 1");
+        }
 
     }
 

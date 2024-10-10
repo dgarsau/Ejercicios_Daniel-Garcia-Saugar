@@ -6,22 +6,32 @@ public class UD2Ejercicio4 {
 
         Scanner entrada = new Scanner(System.in);
 
+        String espacio = " ";
+
         System.out.println("PROGRAMA PARA VER CUANTAS VECES APARECE UNA PALABRA EN UN TEXTO");
+
         System.out.println("Introduce el texto:");
-        String palabra = entrada.nextLine();
+        String texto = entrada.nextLine();
+        texto=texto.concat(" ");
+        texto=espacio.concat(texto);
+        texto=texto.replaceAll("[^\\p{Alpha}]+"," ");
+        texto=texto.toLowerCase();
 
         System.out.println("Introduce la palabra:");
         String subcadena = entrada.nextLine();
-
+        subcadena=subcadena.concat(" ");
+        subcadena=espacio.concat(subcadena);
+        subcadena=subcadena.replaceAll("[^\\p{Alpha}]+"," ");
+        subcadena=subcadena.toLowerCase();
 
         int posicion = 0;
         int veces = 0;
 
-        posicion = palabra.indexOf(subcadena,posicion);
+        posicion = texto.indexOf(subcadena,posicion);
 
         while (posicion>=0) {
 
-            posicion = palabra.indexOf(subcadena,posicion+1);
+            posicion = texto.indexOf(subcadena,posicion+1);
             veces +=1;
 
         }
