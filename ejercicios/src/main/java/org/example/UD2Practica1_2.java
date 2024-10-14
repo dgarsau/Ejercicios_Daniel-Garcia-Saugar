@@ -73,6 +73,7 @@ public class UD2Practica1_2 {
 
         int sum_2 = cifra1_int+cifra2_int+cifra3_int+cifra4_int;
         System.out.println(cifra1_int + "+" + cifra2_int + "+" + cifra3_int + "+" + cifra4_int + "=" + sum_2);
+        System.out.println("Tu numero de la suerte es " + sum_2);
 
     }
 
