@@ -59,8 +59,11 @@ public class Main {
         //UD2Ejercicio5 UD2Ejercicio5 = new UD2Ejercicio5();
         //UD2Ejercicio5.UD2ejercicio5();
 
-        UD2Practica1 UD2Practica1 = new UD2Practica1();
-        UD2Practica1.UD2practica1();
+        //UD2Practica1 UD2Practica1 = new UD2Practica1();
+        //UD2Practica1.UD2practica1();
+
+        UD2Practica1_2 UD2Practica1_2 = new UD2Practica1_2();
+        UD2Practica1_2.UD2practica1_2();
 
 
     }
