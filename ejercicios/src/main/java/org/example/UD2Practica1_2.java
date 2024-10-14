@@ -39,11 +39,11 @@ public class UD2Practica1_2 {
                 anyo_int = Integer.parseInt(anyo);
                 sum_1 = dia_int + mes_int + anyo_int;
 
-                if (fecha_nacimiento.length() != 10 || caracter1 != '/' && caracter2 != '/') {
+                if (fecha_nacimiento.length() != 10 || caracter1 != '/' || caracter2 != '/') {
                     System.out.println("ERROR. Formato incorrecto.");
 
 
-                } else if (dia_int > 31 || dia_int < 0 || mes_int > 12 || mes_int < 0) {
+                } else if (dia_int > 31 || dia_int <= 0 || mes_int > 12 || mes_int <= 0 || anyo_int <= 1900) {
                     System.out.println("ERROR. Fecha incorrecta.");
 
                 } else {
@@ -53,6 +53,10 @@ public class UD2Practica1_2 {
             }
 
             catch (NumberFormatException e){
+                System.out.println("ERROR. Entrada no válida.");
+            }
+
+            catch (StringIndexOutOfBoundsException e){
                 System.out.println("ERROR. Entrada no válida.");
             }
 

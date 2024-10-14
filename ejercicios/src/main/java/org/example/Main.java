@@ -62,14 +62,14 @@ public class Main {
         //UD2Practica1 UD2Practica1 = new UD2Practica1();
         //UD2Practica1.UD2practica1();
 
-        //UD2Practica1_2 UD2Practica1_2 = new UD2Practica1_2();
-        //UD2Practica1_2.UD2practica1_2();
+        UD2Practica1_2 UD2Practica1_2 = new UD2Practica1_2();
+        UD2Practica1_2.UD2practica1_2();
 
         //Excepciones Excepciones = new Excepciones();
         //Excepciones.excepciones();
 
-        ActividadExcepciones ActividadExcepciones = new ActividadExcepciones();
-        ActividadExcepciones.actividadexcepciones();
+        //ActividadExcepciones ActividadExcepciones = new ActividadExcepciones();
+        //ActividadExcepciones.actividadexcepciones();
 
     }
 }
