@@ -68,8 +68,18 @@ public class Main {
         //Excepciones Excepciones = new Excepciones();
         //Excepciones.excepciones();
 
-        ActividadExcepciones ActividadExcepciones = new ActividadExcepciones();
-        ActividadExcepciones.actividadexcepciones();
+        //ActividadExcepciones ActividadExcepciones = new ActividadExcepciones();
+        //ActividadExcepciones.actividadexcepciones();
+
+        //case_ejemplo1 case_ejemplo1 = new case_ejemplo1();
+        //case_ejemplo1.ejemplo1();
+
+        //case_ejemplo2 case_ejemplo2 = new case_ejemplo2();
+        //case_ejemplo2.ejemplo2();
+
+        UD2Practica2 UD2Practica2 = new UD2Practica2();
+        UD2Practica2.UD2practica2();
+
 
     }
 }
