@@ -8,8 +8,8 @@ public class UD2Practica2 {
 
         Scanner entrada = new Scanner(System.in);
         double resultado = 0;
-        int num1 = 0;
-        int num2 = 0;
+        double num1 = 0;
+        double num2 = 0;
 
         boolean error = true;
         boolean error2 = true;
@@ -44,33 +44,40 @@ public class UD2Practica2 {
                         num2 = entrada.nextInt();
                         resultado = num1 + num2;
                         error2 = false;
+                        System.out.println(resultado);
                         break;
                     case "-":
                         System.out.println("Introduce el segundo número");
                         num2 = entrada.nextInt();
                         resultado = num1 - num2;
+                        System.out.println(resultado);
                         error2 = false;
                         break;
                     case "/":
                         System.out.println("Introduce el segundo número");
                         num2 = entrada.nextInt();
-                        try {
-                            resultado = num1 / num2;
-                            error2 = false;
-                        } catch (ArithmeticException e2) {
+                        if (num2==0) {
                             System.out.println("No se puede dividir entre 0");
+
+                        } else {
+                            System.out.println("No se puede dividir entre 0");
+                            resultado = num1 / num2;
+                            System.out.println(resultado);
+                            error2 = false;
                         }
                         break;
 
-                    case "x":
+                    case "X":
                         System.out.println("Introduce el segundo número");
                         num2 = entrada.nextInt();
                         resultado = num1 * num2;
                         error2 = false;
+                        System.out.println(resultado);
                         break;
                     case "R":
                         if (num1>0) {
                             resultado = Math.sqrt(num1);
+                            System.out.println(resultado);
                         }else
                             System.out.println("No se puede calcular la raíz de un número negativo");
                         error2 = false;
@@ -87,8 +94,6 @@ public class UD2Practica2 {
             }
 
         }
-
-        System.out.println(resultado);
 
     }
 
