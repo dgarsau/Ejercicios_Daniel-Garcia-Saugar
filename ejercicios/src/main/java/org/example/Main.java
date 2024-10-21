@@ -77,9 +77,35 @@ public class Main {
         //case_ejemplo2 case_ejemplo2 = new case_ejemplo2();
         //case_ejemplo2.ejemplo2();
 
-        UD2Practica2 UD2Practica2 = new UD2Practica2();
-        UD2Practica2.UD2practica2();
+        //UD2Practica2 UD2Practica2 = new UD2Practica2();
+        //UD2Practica2.UD2practica2();
 
+        //Ternario Ternario = new Ternario();
+        //Ternario.ternario();
+
+        //Bucles1 Bucles1 =  new Bucles1();
+        //Bucles1.bucles1();
+
+        //Bucles2 Bucles2 =  new Bucles2();
+        //Bucles2.bucles2();
+
+        //Bucles3 Bucles3 =  new Bucles3();
+        //Bucles3.bucles3();
+
+        //Bucles4 Bucles4 =  new Bucles4();
+        //Bucles4.bucles4();
+
+        //Bucles5 Bucles5 =  new Bucles5();
+        //Bucles5.bucles5();
+
+        //Bucles6 Bucles6 =  new Bucles6();
+        //Bucles6.bucles6();
+
+        //Bucles7 Bucles7 =  new Bucles7();
+        //Bucles7.bucles7();
+
+        Bucles8 Bucles8 =  new Bucles8();
+        Bucles8.bucles8();
 
     }
 }
