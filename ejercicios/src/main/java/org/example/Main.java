@@ -104,8 +104,11 @@ public class Main {
         //Bucles7 Bucles7 =  new Bucles7();
         //Bucles7.bucles7();
 
-        Bucles8 Bucles8 =  new Bucles8();
-        Bucles8.bucles8();
+        //Bucles8 Bucles8 =  new Bucles8();
+        //Bucles8.bucles8();
+
+        UD2Practica3 UD2Practica3 = new UD2Practica3();
+        UD2Practica3.UD2practica3();
 
     }
 }
