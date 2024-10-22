@@ -8,16 +8,29 @@ public class UD2Practica3 {
         Scanner entrada = new Scanner(System.in);
 
         char caracter;
-        boolean error = false;
-        int cifra;
+        boolean error = true;
+        boolean error2 = false;
+        int cifra=0;
         int resultado;
         int sum = 0;
         int posicion = 0;
         int falta = 0;
+        String ISBN = "";
+        int veces = 0;
 
 
-        System.out.println("Introduce un ISBN:");
-        String ISBN = entrada.next();
+        while (error){
+
+            System.out.println("Introduce un ISBN:");
+            ISBN = entrada.next();
+
+            if (ISBN.length()!=10){
+                System.out.println("ERROR. El ISBN debe tener 10 cifras");
+            } else {
+                error = false;
+            }
+
+        }
 
 
         for (int i = 0; i < 10; i++) {
@@ -25,11 +38,12 @@ public class UD2Practica3 {
             caracter = ISBN.charAt(i);
 
             if (caracter == 'X') {
-                cifra = 10;
+                    cifra = 10;
 
             } else if (caracter == '?') {
-                error=true;
+                error2=true;
                 posicion=(10-i);
+                veces++;
                 continue;
             }
 
@@ -42,18 +56,19 @@ public class UD2Practica3 {
 
         }
 
-        if (error){
+        if (error2){
 
             for(int j=0; j<10; j++) {
+                if (veces>1){
+                    System.out.println("ERROR. No se pueden poner 2 interrogaciones");
+                    break;
+                }
 
                 if ((sum+j*posicion)%11==0){
                     System.out.println("El dígito que falta es "+ j);
                 }
-
-                //falta = sum - falta;
-                //System.out.println("El dígito que falta es " + falta);
-
             }
+
         } else if (sum % 11 == 0){
             System.out.println("El ISBN es válido");
         }
