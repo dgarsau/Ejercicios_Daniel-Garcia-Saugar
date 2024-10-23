@@ -7,37 +7,36 @@ public class UD2Practica3 {
 
         Scanner entrada = new Scanner(System.in);
 
-        char caracter;
+        String ISBN = "";
         boolean error = true;
         boolean error2 = false;
         boolean error3 = false;
-        int cifra=0;
+        char caracter;
+        int cifra = 0;
         int resultado;
         int sum = 0;
         int posicion = 0;
-        int falta = 0;
-        String ISBN = "";
         int veces = 0;
 
 
-        while (error){
+        while (error) {
 
             System.out.println("Introduce un ISBN:");
             ISBN = entrada.next();
             ISBN = ISBN.toUpperCase();
 
-            if (ISBN.length()!=10) {
+            if (ISBN.length() != 10) {
                 System.out.println("ERROR. El ISBN debe tener 10 cifras");
-            }
-            else {
+            } else {
                 for (int i = 0; i < 10; i++) {
                     caracter = ISBN.charAt(i);
                     if (caracter == '?' || caracter == 'X' || Character.isDigit(caracter)) {
-                        error= false;
+                        error = false;
                         continue;
 
                     } else {
                         System.out.println("ERROR. El formato no es válido");
+                        error = true;
                         break;
                     }
                 }
@@ -51,26 +50,24 @@ public class UD2Practica3 {
             caracter = ISBN.charAt(i);
 
             if (caracter == 'X') {
-                if (ISBN.indexOf("X") == 9){
+                if (ISBN.indexOf("X") == 9) {
                     cifra = 10;
-                } else{
-                    System.out.println("ERROR. Solo puede haber una X y debe estar al final.");
+                } else {
+                    error3 = true;
                     break;
                 }
 
             } else if (caracter == '?') {
-                error2=true;
-                posicion=(10-i);
+                error2 = true;
+                posicion = (10 - i);
                 veces++;
                 continue;
-            }
-
-            else {
+            } else {
                 cifra = Integer.parseInt(String.valueOf(caracter));
             }
 
-        resultado = cifra * (10-i);
-        sum += resultado;
+            resultado = cifra * (10 - i);
+            sum += resultado;
 
         }
 
@@ -87,10 +84,13 @@ public class UD2Practica3 {
                 }
             }
 
-        } else if (sum % 11 == 0){
+        }else if (error3){
+            System.out.println("ERROR. Solo puede haber una X y debe estar al final.");
+
+        }else if (sum % 11 == 0){
             System.out.println("El ISBN es válido");
-        }
-        else {
+
+        } else {
             System.out.println("El ISBN no es válido");
         }
     }

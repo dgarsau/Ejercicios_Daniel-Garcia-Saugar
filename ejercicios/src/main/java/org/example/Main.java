@@ -107,8 +107,8 @@ public class Main {
         //Bucles8 Bucles8 =  new Bucles8();
         //Bucles8.bucles8();
 
-        //UD2Practica3 UD2Practica3 = new UD2Practica3();
-        //UD2Practica3.UD2practica3();
+        UD2Practica3 UD2Practica3 = new UD2Practica3();
+        UD2Practica3.UD2practica3();
 
         //Random1 Random1 = new Random1();
         //Random1.random1();
@@ -116,8 +116,8 @@ public class Main {
         //Random2 Random2 = new Random2();
         //Random2.random2();
 
-        Random3 Random3 = new Random3();
-        Random3.random3();
+        //Random3 Random3 = new Random3();
+        //Random3.random3();
 
 
 
