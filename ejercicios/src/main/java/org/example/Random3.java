@@ -29,10 +29,10 @@ public class Random3 {
                     System.out.println("ERROR. El mínimo no puede ser mayor que el máximo");
                 } else {
                     error = false;
+                    System.out.println("¿Cuántos números quieres?");
+                    cantidad = entrada.nextInt();
                 }
 
-                System.out.println("¿Cuántos números quieres?");
-                cantidad = entrada.nextInt();
             }
             
             catch (InputMismatchException e){
