@@ -116,12 +116,23 @@ public class Main {
         //Random2 Random2 = new Random2();
         //Random2.random2();
 
-        Random3 Random3 = new Random3();
-        Random3.random3();
+        //Random3 Random3 = new Random3();
+        //Random3.random3();
 
         //Random4 Random4 = new Random4();
         //Random4.random4();
 
+        //PEejercicio1 PEejercicio1 = new PEejercicio1();
+        //PEejercicio1.peejercicio1();
+
+        //PEejercicio2 PEejercicio2 = new PEejercicio2();
+        //PEejercicio2.peejercicio2();
+
+        //PEejercicio3 PEejercicio3 = new PEejercicio3();
+        //PEejercicio3.peejercicio3();
+
+        PEejercicio4 PEejercicio4 = new PEejercicio4();
+        PEejercicio4.peejercicio4();
 
 
     }
