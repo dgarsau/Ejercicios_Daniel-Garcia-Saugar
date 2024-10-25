@@ -131,9 +131,20 @@ public class Main {
         //PEejercicio3 PEejercicio3 = new PEejercicio3();
         //PEejercicio3.peejercicio3();
 
-        PEejercicio4 PEejercicio4 = new PEejercicio4();
-        PEejercicio4.peejercicio4();
+        //PEejercicio4 PEejercicio4 = new PEejercicio4();
+        //PEejercicio4.peejercicio4();
 
+        //PEejercicio5 PEejercicio5 = new PEejercicio5();
+        //PEejercicio5.peejercicio5();
+
+        //PEejercicio6 PEejercicio6 = new PEejercicio6();
+        //PEejercicio6.peejercicio6();
+
+        //PEejercicio7 PEejercicio7 = new PEejercicio7();
+        //PEejercicio7.peejercicio7();
+
+        Ampliacion1 Ampliacion1 = new Ampliacion1();
+        Ampliacion1.ampliacion1();
 
     }
 }
