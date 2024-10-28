@@ -5,6 +5,7 @@ import java.sql.Time;
 public class Ternario {
     public void ternario() {
 
+        int a; int b; int c; int resultado;
 
         //CASO1
 
@@ -50,14 +51,13 @@ public class Ternario {
 
 //        System.out.println(resultado);
 
-        int a=2, b=2, c=4;
+        a = 1; b = 2; c = 3;
 
-        int resultado =c<b ? a*=4:
-                a>0 && b>c ? a+=c:
-                    a++*2==c ? a*=10 : a--;
+        resultado = a++ == 1 && a > b++ ? a += b :
+                a > 0 && a == b ? a += c :
+                        a == c ? a++ : a--;
 
         System.out.println(resultado);
-
 
 
     }
