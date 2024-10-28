@@ -19,7 +19,6 @@ public class PEejercicio2 {
         }
 
         System.out.println("El resultado es " +base);
-
-
+        
     }
 }

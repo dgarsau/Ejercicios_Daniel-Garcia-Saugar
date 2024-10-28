@@ -122,8 +122,8 @@ public class Main {
         //Random4 Random4 = new Random4();
         //Random4.random4();
 
-        //PEejercicio1 PEejercicio1 = new PEejercicio1();
-        //PEejercicio1.peejercicio1();
+        PEejercicio1 PEejercicio1 = new PEejercicio1();
+        PEejercicio1.peejercicio1();
 
         //PEejercicio2 PEejercicio2 = new PEejercicio2();
         //PEejercicio2.peejercicio2();
@@ -143,8 +143,8 @@ public class Main {
         //PEejercicio7 PEejercicio7 = new PEejercicio7();
         //PEejercicio7.peejercicio7();
 
-        Ampliacion1 Ampliacion1 = new Ampliacion1();
-        Ampliacion1.ampliacion1();
+        //Ampliacion1 Ampliacion1 = new Ampliacion1();
+        //Ampliacion1.ampliacion1();
 
     }
 }
