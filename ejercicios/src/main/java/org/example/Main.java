@@ -146,11 +146,14 @@ public class Main {
         //Ampliacion1 Ampliacion1 = new Ampliacion1();
         //Ampliacion1.ampliacion1();
 
-        Vectores Vectores = new Vectores();
-        Vectores.vectores();
+        //Vectores Vectores = new Vectores();
+        //Vectores.vectores();
 
-        Vectores1 Vectores1 = new Vectores1();
-        Vectores1.vectores1();
+        //Vectores1 Vectores1 = new Vectores1();
+        //Vectores1.vectores1();
+
+        Vectores2 Vectores2 = new Vectores2();
+        Vectores2.vectores2();
 
     }
 }
