@@ -140,11 +140,17 @@ public class Main {
         //PEejercicio6 PEejercicio6 = new PEejercicio6();
         //PEejercicio6.peejercicio6();
 
-        PEejercicio7 PEejercicio7 = new PEejercicio7();
-        PEejercicio7.peejercicio7();
+        //PEejercicio7 PEejercicio7 = new PEejercicio7();
+        //PEejercicio7.peejercicio7();
 
         //Ampliacion1 Ampliacion1 = new Ampliacion1();
         //Ampliacion1.ampliacion1();
+
+        Vectores Vectores = new Vectores();
+        Vectores.vectores();
+
+        Vectores1 Vectores1 = new Vectores1();
+        Vectores1.vectores1();
 
     }
 }
