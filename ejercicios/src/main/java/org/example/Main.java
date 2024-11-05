@@ -152,8 +152,14 @@ public class Main {
         //Vectores1 Vectores1 = new Vectores1();
         //Vectores1.vectores1();
 
-        Vectores2 Vectores2 = new Vectores2();
-        Vectores2.vectores2();
+        //Vectores2 Vectores2 = new Vectores2();
+        //Vectores2.vectores2();
+
+        //Vectores3 Vectores3 = new Vectores3();
+        //Vectores3.vectores3();
+
+        Vectores4 Vectores4 = new Vectores4();
+        Vectores4.vectores4();
 
     }
 }
