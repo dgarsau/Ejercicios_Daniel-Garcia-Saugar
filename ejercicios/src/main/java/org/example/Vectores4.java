@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Vectores4 {
@@ -10,8 +11,8 @@ public class Vectores4 {
         int vector[] = {1, 3, 5, 7, 9};
         int vector2[] = new int[vector.length - 1];
 
-        int numero;
-        boolean posicicon;
+        int indice;
+        boolean aux=false;
 
         for(int i=0; i<vector.length; i++) {
             System.out.print(vector[i]+" ");
@@ -19,19 +20,18 @@ public class Vectores4 {
         System.out.println();
 
         System.out.println("Ingresa el índice a eliminar: ");
-        numero = entrada.nextInt();
+        indice = entrada.nextInt();
 
-        for (int i = 0; i < vector.length; i++) {
-            if (numero >= i) {
+        for (int i = 0; i < vector.length-1; i++) {
+            if (i < indice) {
                 vector2[i] = vector[i];
-                continue;
+            }else{
+                vector2[i] = vector[i + 1];
             }
-            vector2[i] = vector[i];
         }
 
-        for(int i=0; i<vector2.length; i++) {
-            System.out.print(vector2[i] + " ");
-        }
+        System.out.println(Arrays.toString(vector));
+        System.out.println(Arrays.toString(vector2));
 
     }
 }

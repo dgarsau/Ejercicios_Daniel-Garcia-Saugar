@@ -158,8 +158,20 @@ public class Main {
         //Vectores3 Vectores3 = new Vectores3();
         //Vectores3.vectores3();
 
-        Vectores4 Vectores4 = new Vectores4();
-        Vectores4.vectores4();
+        //Vectores4 Vectores4 = new Vectores4();
+        //Vectores4.vectores4();
+
+        //Vectores5 Vectores5 = new Vectores5();
+        //Vectores5.vectores5();
+
+        //Vectores6 Vectores6 = new Vectores6();
+        //Vectores6.vectores6();
+
+        Vectores7 Vectores7 = new Vectores7();
+        Vectores7.vectores7();
+
+        //UD3Practica1 UD3Practica1 = new UD3Practica1();
+        //UD3Practica1.UD3practica1();
 
     }
 }
