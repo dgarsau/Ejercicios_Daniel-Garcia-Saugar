@@ -1,12 +1,14 @@
 package org.example;
 
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 public class UD3Practica1 {
     public void UD3practica1(){
 
         Scanner entrada = new Scanner(System.in);
+        Random random = new Random();
 
         String equipo[] = new String[7];
 
@@ -18,12 +20,11 @@ public class UD3Practica1 {
         String potencia = "";
 
         int total=0;
-
-        int equipo_total=0;
-        int equipo2_total=30;
-
         int aux;
         boolean error=true;
+
+        int primer_samurai= random.nextInt(1,7);
+
 
 
         int vuelta=1;
@@ -67,10 +68,24 @@ public class UD3Practica1 {
             vuelta++;
 
         }
+
         while(vuelta<3);
 
-        System.out.println(Arrays.toString(equipo1));
-        System.out.println(Arrays.toString(equipo2));
+        System.out.println("¡Empieza la batalla!");
+        System.out.println("La batalla empieza con el Samurai " + primer_samurai);
+
+        for (int i=0; i<equipo.length ; i++){
+            if(equipo1[primer_samurai+i]>equipo2[primer_samurai+i]){
+                System.out.println("Samurai "+ (primer_samurai+i) + ". Gana Equipo 1. " +equipo1[primer_samurai+i]+ " vs " + equipo2[primer_samurai+i]);
+            }
+
+        }
+
+
+
+
+
+
 
 
 
