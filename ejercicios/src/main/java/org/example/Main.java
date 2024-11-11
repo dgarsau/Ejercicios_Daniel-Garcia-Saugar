@@ -179,8 +179,14 @@ public class Main {
         //Vectores10 Vectores10 = new Vectores10();
         //Vectores10.vectores10();
 
-        UD3Practica1 UD3Practica1 = new UD3Practica1();
-        UD3Practica1.UD3practica1();
+        //UD3Practica1 UD3Practica1 = new UD3Practica1();
+        //UD3Practica1.UD3practica1();
+
+        //UD3Split UD3Split = new UD3Split();
+        //UD3Split.UD3split();
+
+        UD3Actividad1 UD3Actividad1 = new UD3Actividad1();
+        UD3Actividad1.UD3actividad1();
 
     }
 }
