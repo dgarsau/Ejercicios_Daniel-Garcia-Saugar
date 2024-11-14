@@ -185,8 +185,11 @@ public class Main {
         //UD3Split UD3Split = new UD3Split();
         //UD3Split.UD3split();
 
-        UD3Actividad1 UD3Actividad1 = new UD3Actividad1();
-        UD3Actividad1.UD3actividad1();
+        //UD3Actividad1 UD3Actividad1 = new UD3Actividad1();
+        //UD3Actividad1.UD3actividad1();
+
+        UD3Actividad2 UD3Actividad2 = new UD3Actividad2();
+        UD3Actividad2.UD3actividad2();
 
         //UD3Burbuja UD3Burbuja = new UD3Burbuja();
         //UD3Burbuja.UD3burbuja();
