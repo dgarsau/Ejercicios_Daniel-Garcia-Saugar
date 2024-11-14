@@ -1,5 +1,6 @@
 package org.example;
-
+import java.awt.*;
+import java.net.URI;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -10,7 +11,7 @@ public class UD3Actividad1 {
         Scanner entrada = new Scanner(System.in);
         Random random = new Random();
 
-        int saldo = 10000;
+        int saldo;
         int apuesta;
 
         String[] colores = {"rojo", "negro"};
@@ -24,15 +25,36 @@ public class UD3Actividad1 {
         for (int i = 0; i < numeros.length; i++) {
             numeros[i] = i;
         }
-        System.out.println(Arrays.toString(numeros));
 
         int numero_banca = random.nextInt(37);
         int random1 = random.nextInt(2);
         String color_banca = colores[random1];
         int random2 = random.nextInt(2);
         String par_banca = pares[random2];
-        int modo;
-        int modo2;
+        String modo="1";
+        String modo2="1";
+
+        System.out.println("Introduce tu cuenta de Paypal:");
+        entrada.nextLine();
+        System.out.println("Introduce tu contraseña:");
+        entrada.nextLine();
+
+        try {
+            String url = "https://www.paypal.com";
+
+            if (Desktop.isDesktopSupported()) {
+                Desktop desktop = Desktop.getDesktop();
+
+                desktop.browse(new URI(url));
+            } else {
+                System.out.println("El escritorio no es soportado en este sistema.");
+            }
+        } catch (Exception e) {
+            System.out.println("No se puede abrir paypal");
+        }
+
+        saldo=random.nextInt(1000)+100;
+        System.out.println("Tu saldo es " +saldo+ "€");
 
 
         while (saldo > 0) {
@@ -43,15 +65,16 @@ public class UD3Actividad1 {
             random2 = random.nextInt(2);
             par_banca = pares[random2];
 
-            System.out.println("¿A qué modo quieres jugar? (normal=1) (elegir numero/color/par=2");
-            modo = entrada.nextInt();
             System.out.println("Introduce la apuesta:");
             apuesta = entrada.nextInt();
             saldo -= apuesta;
 
+            System.out.println("¿A qué modo quieres jugar? (normal=1) (elegir numero/color/par=2)");
+            modo = entrada.next();
+
             switch (modo) {
 
-                case 1:
+                case "1":
 
                     while (!existe_numero || !existe_color || !existe_par) {
 
@@ -107,16 +130,20 @@ public class UD3Actividad1 {
                         System.out.println("Pierdes");
                     }
 
+                    System.out.println("Saldo restante: " + saldo + "€");
 
+                    System.out.println("___________________________________");
 
-                case 2:
+                    break;
 
-                    System.out.println("¿A qué quieres apostar? (numeros=1, color=2, par/impar=3");
-                    modo2= entrada.nextInt();
+                case "2":
+
+                    System.out.println("¿A qué quieres apostar? (numeros=1, color=2, par/impar=3, exit=default)");
+                    modo2= entrada.next();
 
                     switch (modo2){
 
-                        case 1:
+                        case "1":
 
                             System.out.println("Introduce el número:");
                             numero=entrada.nextInt();
@@ -126,11 +153,13 @@ public class UD3Actividad1 {
                             if(numero==numero_banca){
                                 System.out.println("Has ganado!");
                                 apuesta*=35;
+                                saldo += apuesta;
                             }else{
                                 saldo-=apuesta;
                             }
+                            break;
 
-                        case 2:
+                        case "2":
 
                             System.out.println("Introduce el color:");
                             color=entrada.next();
@@ -140,11 +169,13 @@ public class UD3Actividad1 {
                             if(color.equals(color_banca)){
                                 System.out.println("Has ganado!");
                                 apuesta*=2;
+                                saldo += apuesta;
                             }else{
                                 saldo-=apuesta;
                             }
+                            break;
 
-                        case 3:
+                        case "3":
 
                             System.out.println("Introduce el par/impar:");
                             par=entrada.next();
@@ -154,13 +185,19 @@ public class UD3Actividad1 {
                             if(par.equals(par_banca)){
                                 System.out.println("Has ganado!");
                                 apuesta*=2;
+                                saldo += apuesta;
                             }else{
                                 saldo-=apuesta;
                             }
+                            break;
+
 
                     }
-                    
+
                     System.out.println("Saldo restante: " + saldo + "€");
+
+                    System.out.println("___________________________________");
+
 
             }
         }
