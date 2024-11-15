@@ -188,11 +188,16 @@ public class Main {
         //UD3Actividad1 UD3Actividad1 = new UD3Actividad1();
         //UD3Actividad1.UD3actividad1();
 
-        UD3Actividad2 UD3Actividad2 = new UD3Actividad2();
-        UD3Actividad2.UD3actividad2();
+        //UD3Actividad2 UD3Actividad2 = new UD3Actividad2();
+        //UD3Actividad2.UD3actividad2_1();
+        //UD3Actividad2.UD3actividad2_2();
+        //UD3Actividad2.UD3actividad2_3();
 
         //UD3Burbuja UD3Burbuja = new UD3Burbuja();
         //UD3Burbuja.UD3burbuja();
+
+        UD3Practica2 UD3Practica2 = new UD3Practica2();
+        UD3Practica2.UD3practica2();
 
     }
 }
