@@ -196,17 +196,18 @@ public class Main {
         //UD3Burbuja UD3Burbuja = new UD3Burbuja();
         //UD3Burbuja.UD3burbuja();
 
-        UD3Practica2 UD3Practica2 = new UD3Practica2();
-        UD3Practica2.UD3practica2();
+        //UD3Practica2 UD3Practica2 = new UD3Practica2();
+        //UD3Practica2.UD3practica2();
 
-        //PreMatrices2 PreMatrices2 = new PreMatrices2();
-        //PreMatrices2.prematrices2();
+        PreMatrices2 PreMatrices2 = new PreMatrices2();
+        PreMatrices2.prematrices2();
 
         //PreMatrices3 PreMatrices3 = new PreMatrices3();
         //PreMatrices3.prematrices3();
 
         //PreMatrices4 PreMatrices4 = new PreMatrices4();
         //PreMatrices4.prematrices4();
+
 
     }
 }
