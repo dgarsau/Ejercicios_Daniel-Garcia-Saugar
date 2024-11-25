@@ -199,8 +199,8 @@ public class Main {
         //UD3Practica2 UD3Practica2 = new UD3Practica2();
         //UD3Practica2.UD3practica2();
 
-        PreMatrices2 PreMatrices2 = new PreMatrices2();
-        PreMatrices2.prematrices2();
+        //PreMatrices2 PreMatrices2 = new PreMatrices2();
+        //PreMatrices2.prematrices2();
 
         //PreMatrices3 PreMatrices3 = new PreMatrices3();
         //PreMatrices3.prematrices3();
@@ -208,6 +208,23 @@ public class Main {
         //PreMatrices4 PreMatrices4 = new PreMatrices4();
         //PreMatrices4.prematrices4();
 
+        //Matrices Matrices = new Matrices();
+        //Matrices.matrices();
+
+        //Matrices1 Matrices1 = new Matrices1();
+        //Matrices1.matrices1();
+
+        //Matrices2 Matrices2 = new Matrices2();
+        //Matrices2.matrices2();
+
+        //Matrices3 Matrices3 = new Matrices3();
+        //Matrices3.matrices3();
+
+        //Matrices4 Matrices4 = new Matrices4();
+        //Matrices4.matrices4();
+
+        UD3Practica3 UD3Practica3 = new UD3Practica3();
+        UD3Practica3.UD3practica3();
 
     }
 }

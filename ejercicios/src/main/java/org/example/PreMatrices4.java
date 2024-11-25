@@ -14,21 +14,30 @@ public class PreMatrices4 {
 
         String primos="";
 
-        for (int i = 1; i < m; i++) {
+        bucle1:
+        for (int i = 2; i < m; i++) {
+
             for (int j = 2; j < i; j++) {
                 if(i%j==0){
-                    primo=false;
-                    break;
-                }else{
-                    primo=true;
+                    continue bucle1;
                 }
             }
-            if(primo){
-                primos=primos.concat(i + " ");
-            }
+            System.out.print(i + " ");
         }
 
-        System.out.println(primos);
 
+//        for (int i = 2; i < m; i++) {
+//            primo = true;
+//            for (int j = 2; j < i; j++) {
+//                if(i%j==0){
+//                    primo=false;
+//                    break;
+//                }
+//            }
+//            if(primo){
+//                primos=primos.concat(i + " ");
+//            }
+//        }
+//        System.out.println(primos);
     }
 }
