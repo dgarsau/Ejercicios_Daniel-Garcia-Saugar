@@ -12,6 +12,8 @@ public class UD3Practica3 {
         int n;
         int aux = 0;
 
+        int palabras=0;
+
         boolean error = true;
 
         String fila = "";
@@ -21,7 +23,6 @@ public class UD3Practica3 {
         String[] linea = new String[0];
         String[] palabra = new String[0];
 
-        String posicion = "";
         int posicionm = -1;
         int posicionn = 0;
 
@@ -47,18 +48,22 @@ public class UD3Practica3 {
             while (error) {
                 System.out.println("Introduce las letras de la fila " + (i + 1) + ":");
                 fila = entrada.next();
-                if (fila.matches("[a-zA-Z]+")) {
+                if (fila.matches("[a-zA-Z]+") && fila.length()==sopa[0].length) {
                     error = false;
                 } else {
-                    System.out.println("ERROR. La entrada introducida no es válida, tienen que ser letras.");
+                    System.out.println("ERROR. La entrada introducida no es válida.(Tienen que ser " + sopa[0].length + " letras)");
                 }
+
             }
             error = true;
             linea = fila.split("");
+
             for (int j = 0; j < sopa[0].length; j++) {
                 sopa[i][j] = linea[j];
             }
         }
+
+        error=true;
 
         for (String[] filas : sopa) {
             for (String columnas : filas) {
@@ -67,102 +72,165 @@ public class UD3Practica3 {
             System.out.println();
         }
 
-        System.out.println("Introduce la palabra a buscar:");
-        palabrastring = entrada.next();
-        palabra = palabrastring.split("");
-
         for (int i = 0; i < sopa.length; i++) {
             for (int j = 0; j < sopa[0].length; j++) {
-                if (palabra[aux].equals(sopa[i][j])) {
-                    if(aux==0){
-                        posicionm=i;
-                        posicionn=j;
-                    }
-                    aux++;
-                    if(aux==palabra.length){
-                        System.out.println("Encontrada! En la posicion " + posicionm + "," + posicionn + ". En horizontal (Izquierda a derecha)");
-                        aux=0;
-                        posicionm=-1;
-                        posicionn=-1;
-                    }
-                } else {
-                    aux = 0;
-                    posicionm=-1;
-                    posicionn=-1;
-                }
+                sopa[i][j]=sopa[i][j].toLowerCase();
             }
         }
 
-        aux=0;
-
-        for (int i = sopa.length-1; i >= 0 ; i--) {
-            for (int j = sopa[0].length-1; j >= 0 ; j--) {
-                if (palabra[aux].equals(sopa[i][j])) {
-                    if(aux==0){
-                        posicionm=i;
-                        posicionn=j;
-                    }
-                    aux++;
-                    if(aux==palabra.length){
-                        System.out.println("Encontrada! En la posicion " + posicionm + "," + posicionn + ". En horizontal (Derecha a izquierda)");
-                        aux= 0;
-                        posicionm=-1;
-                        posicionn=-1;
-                    }
-                } else {
-                    aux = 0;
-                    posicionm=-1;
-                    posicionn=-1;
-                }
+        while(error){
+            try{
+                System.out.println("Cuántas palabras quieres buscar?");
+                palabras=entrada.nextInt();
+                error=false;
+            }catch(InputMismatchException e){
+                System.out.println("ERROR. La entrada introducida no es válida.");
+                entrada.nextLine();
             }
         }
 
-        aux=0;
+        for (int k = 1; k <= palabras; k++) {
 
-        for (int i = 0; i < sopa[0].length; i++) {
-            for (int j = 0; j < sopa.length; j++) {
-                if (palabra[aux].equals(sopa[j][i])) {
-                    if(aux==0){
-                        posicionm=j;
-                        posicionn=i;
+            System.out.println("Introduce la palabra "+ k +":");
+            palabrastring = entrada.next();
+            palabrastring = palabrastring.toLowerCase();
+            palabra = palabrastring.split("");
+
+            for (int i = 0; i < sopa.length; i++) {
+                for (int j = 0; j < sopa[0].length; j++) {
+                    if (palabra[aux].equals(sopa[i][j])) {
+                        if (aux == 0) {
+                            posicionm = i;
+                            posicionn = j;
+                        }
+                        aux++;
+                        if (aux == palabra.length) {
+                            System.out.println("Encontrada! En la posicion " + posicionm + "," + posicionn + ". En horizontal (Izquierda a derecha)");
+                            aux = 0;
+                            posicionm = -1;
+                            posicionn = -1;
+                        }
+                    } else {
+                        aux = 0;
+                        posicionm = -1;
+                        posicionn = -1;
+                    }
+                }
+                aux=0;
+            }
+
+            for (int i = sopa.length - 1; i >= 0; i--) {
+                for (int j = sopa[0].length - 1; j >= 0; j--) {
+                    if (palabra[aux].equals(sopa[i][j])) {
+                        if (aux == 0) {
+                            posicionm = i;
+                            posicionn = j;
+                        }
+                        aux++;
+                        if (aux == palabra.length) {
+                            System.out.println("Encontrada! En la posicion " + posicionm + "," + posicionn + ". En horizontal (Derecha a izquierda)");
+                            aux = 0;
+                            posicionm = -1;
+                            posicionn = -1;
+                        }
+                    } else {
+                        aux = 0;
+                        posicionm = -1;
+                        posicionn = -1;
+                    }
+                }
+                aux=0;
+            }
+
+            for (int i = 0; i < sopa[0].length; i++) {
+                for (int j = 0; j < sopa.length; j++) {
+                    if (palabra[aux].equals(sopa[j][i])) {
+                        if (aux == 0) {
+                            posicionm = j;
+                            posicionn = i;
+                        }
+                        aux++;
+                        if (aux == palabra.length) {
+                            System.out.println("Encontrada! En la posicion " + posicionm + "," + posicionn + ". En vertical (Arriba a abajo)");
+                            aux = 0;
+                            posicionm = -1;
+                            posicionn = -1;
+                        }
+                    } else {
+                        aux = 0;
+                        posicionm = -1;
+                        posicionn = -1;
+                    }
+                }
+                aux=0;
+            }
+
+            for (int i = sopa[0].length - 1; i >= 0; i--) {
+                for (int j = sopa.length - 1; j >= 0; j--) {
+                    if (palabra[aux].equals(sopa[j][i])) {
+                        if (aux == 0) {
+                            posicionm = j;
+                            posicionn = i;
+                        }
+                        aux++;
+                        if (aux == palabra.length) {
+                            System.out.println("Encontrada! En la posicion " + posicionm + "," + posicionn + ". En vertical (Abajo a arriba)");
+                            aux = 0;
+                            posicionm = -1;
+                            posicionn = -1;
+                        }
+                    } else {
+                        aux = 0;
+                        posicionm = -1;
+                        posicionn = -1;
+                    }
+                }
+                aux=0;
+            }
+
+            for (int i = 0; i < sopa.length; i++) {
+                if (palabra[aux].equals(sopa[i][i])) {
+                    if (aux == 0) {
+                        posicionm = i;
+                        posicionn = i;
                     }
                     aux++;
-                    if(aux==palabra.length){
-                        System.out.println("Encontrada! En la posicion " + posicionm + "," + posicionn + ". En vertical (Arriba a abajo)");
-                        aux=0;
-                        posicionm=-1;
-                        posicionn=-1;
+                    if (aux == palabra.length) {
+                        System.out.println("Encontrada! En la posicion " + posicionm + "," + posicionn + ". En diagonal (Izquierda a derecha)");
+                        aux = 0;
+                        posicionm = -1;
+                        posicionn = -1;
                     }
                 } else {
                     aux = 0;
-                    posicionm=-1;
-                    posicionn=-1;
+                    posicionm = -1;
+                    posicionn = -1;
                 }
             }
-        }
 
-        aux=0;
+            aux=0;
 
-        for (int i = sopa[0].length-1; i >= 0 ; i--) {
-            for (int j = sopa.length-1; j >= 0 ; j--) {
-                if (palabra[aux].equals(sopa[j][i])) {
-                    if(aux==0){
-                        posicionm=j;
-                        posicionn=i;
+            for (int i = sopa.length - 1; i >= 0; i--) {
+                if (palabra[aux].equals(sopa[i][i])) {
+                    if (aux == 0) {
+                        posicionm = i;
+                        posicionn = i;
                     }
                     aux++;
-                    if(aux==palabra.length){
-                        System.out.println("Encontrada! En la posicion " + posicionm + "," + posicionn + ". En vertical (Abajo a arriba)");
-                        aux= 0;
-                        posicionm=-1;
-                        posicionn=-1;
+                    if (aux == palabra.length) {
+                        System.out.println("Encontrada! En la posicion " + posicionm + "," + posicionn + ". En diagonal (Derecha a izquierda)");
+                        aux = 0;
+                        posicionm = -1;
+                        posicionn = -1;
                     }
                 } else {
                     aux = 0;
-                    posicionm=-1;
-                    posicionn=-1;
+                    posicionm = -1;
+                    posicionn = -1;
                 }
             }
+
+            aux=0;
         }
     }
 }
