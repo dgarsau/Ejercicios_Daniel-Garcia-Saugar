@@ -223,8 +223,20 @@ public class Main {
         //Matrices4 Matrices4 = new Matrices4();
         //Matrices4.matrices4();
 
-        UD3Practica3 UD3Practica3 = new UD3Practica3();
-        UD3Practica3.UD3practica3();
+        //UD3Practica3 UD3Practica3 = new UD3Practica3();
+        //UD3Practica3.UD3practica3();
+
+        //Pruebas Pruebas = new Pruebas();
+        //Pruebas.pruebas();
+
+//        int grados = 17;
+//        int grados_kelvin = Metodos.gradosKelvin(grados);
+//        System.out.println(grados_kelvin);
+
+        Bingo Bingo = new Bingo();
+        Bingo.bingo();
+
+
 
     }
 }
